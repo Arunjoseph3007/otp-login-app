@@ -12,9 +12,9 @@ app.use(cors());
 app.use("/auth", authRouter);
 
 app.get("/", (req, res) => {
-  res.json(`Server running on port ${port}`);
+  return res.json(`Server running on port ${port}`);
 });
 
-connectDB().then(() =>
-  app.listen(port, () => console.log("Server started..."))
-);
+connectDB();
+
+app.listen(port, () => console.log("Server started..."));

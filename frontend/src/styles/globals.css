@@ -46,35 +46,3 @@ body {
   }
 }
 
-.draw-panel {
-  width: 100vw;
-  height: 100vh;
-  transform-origin: top left;
-  --base-size: 4px;
-  --size: calc(4 * var(--base-size));
-  background: linear-gradient(#00000015 1px, transparent 1px),
-    linear-gradient(90deg, #00000015 1px, transparent 1px),
-    linear-gradient(#00000025 1px, transparent 1px),
-    linear-gradient(90deg, #00000025 1px, transparent 1px),
-    linear-gradient(#00000030 1px, transparent 1px),
-    linear-gradient(90deg, #00000030 1px, transparent 1px), #f2f2f2;
-  background-size: calc(1 * var(--size)) calc(1 * var(--size)),
-    calc(1 * var(--size)) calc(1 * var(--size)),
-    calc(4 * var(--size)) calc(4 * var(--size)),
-    calc(4 * var(--size)) calc(4 * var(--size)),
-    calc(16 * var(--size)) calc(16 * var(--size)),
-    calc(16 * var(--size)) calc(16 * var(--size)), 100vh 100vw;
-}
-
-.grid-mode-SUPERFINE {
-  --size: calc(2 * var(--base-size));
-}
-.grid-mode-FINE {
-  --size: calc(4 * var(--base-size));
-}
-.grid-mode-ROUGH {
-  --size: calc(8 * var(--base-size));
-}
-.grid-mode-NONE {
-  background: #f2f2f2;
-}
